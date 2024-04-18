@@ -1,0 +1,463 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport"
+        content="width=device-width, 
+                initial-scale=1.0"> 
+
+    <!-- Font Awesome CDN-->
+    <link rel="stylesheet" href= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" /> 
+
+    <!-- For font family Poppins -->
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com"> 
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com" crossorigin> 
+    <link href= 
+"https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet"> 
+    <title>Responsive Services Section</title> 
+    <style> 
+        * { 
+            box-sizing: border-box; 
+        } 
+
+ body { 
+    font-family: 'Poppins', sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-color: rgb(90, 90, 90); 
+    background-blend-mode: multiply; 
+    background-position: center; 
+    color: #fff; 
+
+} 
+  video {
+            position: fixed; /* Position the video */
+            top: 0;
+            left: 0;
+            width: 100%; /* Make the video cover the entire viewport */
+            height: 100%;
+            object-fit: cover; /* Ensure the video covers the entire container */
+            z-index: -1; /* Send the video to the back */
+        }
+
+        h1, 
+        h3 { 
+            text-align: center; 
+            text-transform: uppercase; 
+        } 
+
+        h1 { 
+            position: relative; 
+            max-width: max-content; 
+            margin: 2rem auto 5rem auto; 
+        } 
+
+        h1::after { 
+            content: ""; 
+            position: absolute; 
+            width: 75%; 
+            height: 5px; 
+            background-color: lightgreen; 
+            bottom: -2rem; 
+            left: 25px; 
+        } 
+
+        i { 
+            font-size: 3rem; 
+            color: lightgreen; 
+            padding: 1rem; 
+            transition: all 0.3s linear; 
+            transform: rotate(-45deg); 
+        } 
+
+        .services-container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: space-around; 
+        } 
+
+        .service-card { 
+            cursor: pointer; 
+            width: 300px; 
+            margin: 20px; 
+            padding: 2rem 20px 20px 20px; 
+            text-align: center; 
+            border-radius: 5px; 
+            transition: all 0.3s ease-in-out; 
+        } 
+
+        .icon-container { 
+            border: 2px solid lightgreen; 
+            transition: 0.3s linear; 
+            width: max-content; 
+            margin: 0 auto; 
+            transform: rotate(45deg); 
+        } 
+
+        .service-card:hover { 
+            box-shadow: 0 0 30px 0 lightgreen; 
+            transform: scale(1.1); 
+        } 
+
+        .service-card a { 
+            color: lightgreen; 
+            text-decoration: none; 
+        } 
+
+        @media (max-width: 768px) { 
+            .service-card { 
+                width: 100%; 
+            } 
+        } 
+    </style> 
+</head> 
+
+<body> 
+     <video autoplay muted loop>
+        <source src="der.webm" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <h1>Our Services</h1> 
+    <div class="services-container"> 
+        <div class="service-card"> 
+            <div class="icon-container"> 
+                <i class="fa-solid fa-book"></i> 
+            </div> 
+            <h3>Book Keeping</h3> 
+            <p><ul>
+    <li>Accounts Payable Management</li>
+    <li>Accounts Receivable Management</li>
+    <li>Bank Reconciliation</li>
+    <li>Financial Reporting</li>
+    <li>Payroll Processing</li>
+    <li>Expense Tracking</li>
+    <li>Tax Preparation and Filing</li>
+    <li>Budgeting and Forecasting</li>
+    <li>Internal Controls Implementation</li>
+    <li>Software Setup and Training</li>
+</ul>
+</p> 
+        </div> 
+
+        <div class="service-card"> 
+            <div class="icon-container"> 
+                <i class="fa-solid fa-briefcase"></i> 
+            </div> 
+            <h3>Outsourced Accounting</h3> 
+            <p><ul>
+    <li>Financial Statement Preparation</li>
+    <li>Management Reporting</li>
+    <li>Accounts Payable Processing</li>
+    <li>Accounts Receivable Management</li>
+    <li>Expense Tracking and Management</li>
+    <li>Payroll Processing and Management</li>
+    <li>Tax Planning and Compliance</li>
+    <li>Budgeting and Forecasting</li>
+    <li>Internal Controls Assessment</li>
+    <li>Financial Analysis and Insights</li>
+</ul>
+</p> 
+        </div> 
+
+        <div class="service-card"> 
+            <div class="icon-container"> 
+                <i class="fa-solid fa-clipboard-check"></i> 
+            </div> 
+            <h3>Audit and Assurance</h3> 
+            <p><ul>
+    <li>Financial Statement Audits</li>
+    <li>Internal Audits</li>
+    <li>External Audits</li>
+    <li>Compliance Audits</li>
+    <li>Operational Audits</li>
+    <li>Forensic Audits</li>
+    <li>Information Systems Audits</li>
+    <li>Due Diligence Reviews</li>
+    <li>Risk Assessment and Management</li>
+    <li>Quality Assurance Reviews</li>
+</ul>
+.</p> 
+        </div> 
+
+        <div class="service-card"> 
+            <div class="icon-container"> 
+                <i class="fa-solid fa-handshake"></i> 
+            </div> 
+            <h3>Business Advisory</h3> 
+            <p><ul>
+    <li>Strategic Planning</li>
+    <li>Market Research and Analysis</li>
+    <li>Business Process Improvement</li>
+    <li>Financial Modeling and Forecasting</li>
+    <li>Performance Measurement and KPIs</li>
+    <li>Change Management</li>
+    <li>Corporate Restructuring</li>
+    <li>Succession Planning</li>
+    <li>Business Valuation</li>
+    <li>Merger and Acquisition Advisory</li>
+</ul>
+.</p> 
+        </div> 
+
+        <div class="service-card"> 
+            <div class="icon-container"> 
+                <i class="fa-solid fa-tasks"></i> 
+            </div> 
+            <h3>Project Management</h3> 
+            <p><ul>
+    <li>Project Planning and Scheduling</li>
+    <li>Resource Allocation and Management</li>
+    <li>Risk Assessment and Mitigation</li>
+    <li>Stakeholder Communication and Engagement</li>
+    <li>Progress Tracking and Reporting</li>
+    <li>Quality Assurance and Control</li>
+    <li>Budgeting and Cost Management</li>
+    <li>Change Management</li>
+    <li>Procurement and Vendor Management</li>
+    <li>Integration Management</li>
+</ul>
+.</p> 
+        </div> 
+
+        <div class="service-card"> 
+            <div class="icon-container"> 
+                <i class="fa-solid fa-building"></i> 
+            </div> 
+            <h3>Property Management</h3> 
+            <p><ul>
+    <li>Property Maintenance and Repairs</li>
+    <li>Rent Collection and Financial Management</li>
+    <li>Lease Administration and Tenant Relations</li>
+    <li>Vacancy Marketing and Tenant Screening</li>
+    <li>Property Inspections and Compliance</li>
+    <li>Utilities and Service Coordination</li>
+    <li>Legal and Regulatory Compliance</li>
+    <li>Emergency Response and Crisis Management</li>
+    <li>Capital Improvement Planning</li>
+    <li>Property Valuation and Market Analysis</li>
+</ul>
+</p> 
+        </div> 
+
+        <div class="service-card"> 
+            <div class="icon-container"> 
+                <i class="fa-solid fa-file-invoice-dollar"></i> 
+            </div> 
+            <h3>Tax Audits</h3> 
+            <p><ul>
+    <li>Preparation and Submission of Tax Returns</li>
+    <li>Audit Representation and Compliance</li>
+    <li>Tax Planning and Strategy Development</li>
+    <li>Review of Financial Records and Documentation</li>
+    <li>Resolution of Tax Disputes and Issues</li>
+    <li>Assistance with Tax Audits and Investigations</li>
+    <li>Analysis of Tax Liabilities and Risks</li>
+    <li>Identification of Tax Credits and Deductions</li>
+    <li>Comprehensive Tax Compliance Services</li>
+    <li>Consultation on Tax Law Changes and Updates</li>
+</ul>
+</p> 
+        </div> 
+
+        <div class="service-card"> 
+            <div class="icon-container"> 
+                <i class="fa-solid fa-gavel"></i> 
+            </div> 
+            <h3>Business Compliance Audits</h3> 
+            <p><ul>
+    <li>Comprehensive Compliance Assessments</li>
+    <li>Review of Regulatory Requirements</li>
+    <li>Identification of Compliance Risks</li>
+    <li>Development of Compliance Strategies</li>
+    <li>Implementation of Compliance Programs</li>
+    <li>Internal Control Evaluation and Enhancement</li>
+    <li>Policy and Procedure Review</li>
+    <li>Employee Training on Compliance Standards</li>
+    <li>Monitoring and Reporting on Compliance Activities</li>
+    <li>Assistance with Regulatory Filings and Reporting</li>
+</ul>
+.</p> 
+        </div> 
+
+        <div class="service-card"> 
+            <div class="icon-container"> 
+                <i class="fa-solid fa-coins"></i> 
+            </div> 
+            <h3>Tax Planning</h3> 
+            <p><ul>
+    <li>Strategic Tax Planning for Individuals and Businesses</li>
+    <li>Analysis of Tax Implications for Financial Transactions</li>
+    <li>Identification of Tax-saving Opportunities</li>
+    <li>Optimization of Tax Structure</li>
+    <li>Estate and Inheritance Tax Planning</li>
+    <li>Retirement Planning with Tax Considerations</li>
+    <li>Review of Tax Credits and Deductions</li>
+    <li>Assistance with Tax Compliance and Filing</li>
+    <li>Tax-efficient Investment Strategies</li>
+    <li>Transfer Pricing Planning for Multinational Corporations</li>
+</ul>
+</p> 
+        </div> 
+
+        <div class="service-card"> 
+            <div class="icon-container"> 
+                <i class="fa-solid fa-exclamation-triangle"></i> 
+            </div> 
+            <h3>Strategic Risk Assessment</h3> 
+            <p><ul>
+    <li>Comprehensive Risk Identification and Analysis</li>
+    <li>Strategic Risk Mapping and Prioritization</li>
+    <li>Scenario Planning and Stress Testing</li>
+    <li>Business Continuity Planning</li>
+    <li>Development of Risk Mitigation Strategies</li>
+    <li>Internal Control Evaluation and Enhancement</li>
+    <li>Regulatory Compliance Risk Assessment</li>
+    <li>Cybersecurity Risk Assessment and Management</li>
+    <li>Supply Chain Risk Assessment</li>
+    <li>Market and Competitive Risk Analysis</li>
+</ul>
+</p> 
+        </div> 
+
+        <div class="service-card"> 
+            <div class="icon-container"> 
+                <i class="fa-solid fa-cogs"></i> 
+            </div> 
+            <h3>Internal Controls Assessment and Design</h3> 
+            <p><ul>
+    <li>Review and Documentation of Existing Controls</li>
+    <li>Gap Analysis to Identify Weaknesses and Inefficiencies</li>
+    <li>Design and Implementation of Internal Control Frameworks</li>
+    <li>Segregation of Duties (SoD) Analysis</li>
+    <li>Risk-Based Control Assessment</li>
+    <li>Control Environment Evaluation</li>
+    <li>Automated Controls Implementation and Testing</li>
+    <li>Internal Audit Assistance and Support</li>
+    <li>Control Monitoring and Continuous Improvement</li>
+    <li>Training and Awareness Programs on Internal Controls</li>
+</ul>
+</p> 
+        </div> 
+
+        <div class="service-card"> 
+            <div class="icon-container"> 
+                <i class="fa-solid fa-store-alt"></i> 
+            </div> 
+            <h3>ETIMS Management for SMEs</h3> 
+            <p><ul>
+    <li>ETIMS Implementation Consultation</li>
+    <li>System Configuration and Setup</li>
+    <li>Training for SME Staff on ETIMS Usage</li>
+    <li>Customization of ETIMS for SME-specific Needs</li>
+    <li>Data Migration and Integration with Existing Systems</li>
+    <li>ETIMS Compliance Monitoring and Reporting</li>
+    <li>Support for ETIMS Registration and Licensing</li>
+    <li>Continuous System Maintenance and Updates</li>
+    <li>ETIMS Troubleshooting and Issue Resolution</li>
+    <li>Advisory Services on ETIMS Best Practices for SMEs</li>
+</ul>
+</p> 
+        </div> 
+
+        <div class="service-card"> 
+            <div class="icon-container"> 
+                <i class="fa-solid fa-money-check-alt"></i> 
+            </div> 
+            <h3>Payroll and Payroll Expenses Management</h3> 
+            <p><ul>
+    <li>Payroll Processing</li>
+    <li>Employee Compensation Structuring</li>
+    <li>Timesheet Management</li>
+    <li>Payroll Tax Calculation and Filing</li>
+    <li>Benefits Administration</li>
+    <li>Leave Management</li>
+    <li>Expense Reimbursement Processing</li>
+    <li>Payroll Reporting and Analytics</li>
+    <li>Compliance with Labor Laws and Regulations</li>
+    <li>Integration with Accounting Systems</li>
+</ul>
+</p> 
+        </div> 
+
+        <div class="service-card"> 
+            <div class="icon-container"> 
+                <i class="fa-solid fa-lightbulb-on"></i> 
+            </div> 
+            <h3>Strategic Planning</h3> 
+            <p><ul>
+    <li>SWOT Analysis (Strengths, Weaknesses, Opportunities, Threats)</li>
+    <li>Mission and Vision Development</li>
+    <li>Goal Setting and Objective Definition</li>
+    <li>Market Analysis and Competitive Intelligence</li>
+    <li>Strategic Positioning</li>
+    <li>Resource Allocation and Budgeting</li>
+    <li>Risk Assessment and Mitigation Strategies</li>
+    <li>Scenario Planning and Contingency Planning</li>
+    <li>Performance Metrics and KPIs (Key Performance Indicators)</li>
+    <li>Implementation Planning</li>
+    <li>Monitoring and Evaluation</li>
+</ul>
+</p> 
+        </div> 
+
+        <div class="service-card"> 
+            <div class="icon-container"> 
+                <i class="fa-solid fa-chalkboard-teacher"></i> 
+            </div> 
+            <h3>Practical Accounting Training</h3> 
+            <p><ul>
+    <li>Introduction to Accounting Principles and Concepts</li>
+    <li>Financial Statement Preparation (Income Statement, Balance Sheet, Cash Flow Statement)</li>
+    <li>Bookkeeping and Record-Keeping</li>
+    <li>Accounting Software Training (e.g., QuickBooks, Xero)</li>
+    <li>Accounts Payable and Receivable Management</li>
+    <li>Bank Reconciliation</li>
+    <li>Payroll Processing</li>
+    <li>Budgeting and Forecasting</li>
+    <li>Taxation Basics</li>
+    <li>Financial Analysis and Reporting</li>
+    <li>Auditing Procedures</li>
+    <li>Internal Controls and Fraud Prevention</li>
+    <li>Professional Ethics and Standards</li>
+    <li>Hands-on Practice and Case Studies</li>
+</ul>
+.</p> 
+        </div> 
+
+        <div class="service-card"> 
+            <div class="icon-container"> 
+                <i class="fa-solid fa-clipboard-list-check"></i> 
+            </div> 
+            <h3>Business Services Registration</h3> 
+            <p><ul>
+    <li>Legal Structure Selection (e.g., Sole Proprietorship, Partnership, Corporation, LLC)</li>
+    <li>Business Name Registration and Trademark Search</li>
+    <li>Obtaining Business Licenses and Permits</li>
+    <li>Registration with Government Authorities (e.g., IRS, State Revenue Departments)</li>
+    <li>Employer Identification Number (EIN) Application</li>
+    <li>State and Local Tax Registration (Sales Tax, Use Tax)</li>
+    <li>Industry-Specific Regulations Compliance (e.g., Health Regulations for Food Businesses)</li>
+    <li>Professional Licensing Requirements (if applicable)</li>
+    <li>Registered Agent Services</li>
+    <li>Foreign Entity Registration (if operating in multiple states)</li>
+    <li>Business Entity Renewals and Compliance Filings</li>
+    <li>Business Insurance and Risk Management</li>
+    <li>Understanding Regulatory Obligations and Compliance Deadlines</li>
+</ul>
+</p> 
+            <a href="#" class="button">Learn More</a> 
+        </div> 
+    </div> 
+</body> 
+
+</html>
