@@ -10,112 +10,103 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    line-height: 1.6;
-    color: #fff;
     background: #1D1E23;
+    color: #fff;
+    overflow-x: hidden; /* Prevents horizontal scroll */
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    position: relative; /* For layering nav and content */
 }
 
 h1 {
-    font-size: 2rem; /* Adaptive font size */
-    font-weight: 600;
+    font-size: 2rem; /* Responsive font size */
+    margin-bottom: 20px;
 }
 
-h1 span::before {
-    content: "";
-    height: 30px;
-    width: 2px;
-    background: #BD53ED;
-    animation: blink 0.7s infinite;
-}
-
-@keyframes blink {
-    50% { opacity: 0 }
-}
-
-/* Navigation styles */
-.navigation-top,
-.navigation-left {
+.navigation-top, .navigation-left {
     background-color: #333;
+    position: fixed;
+    width: 100%;
     z-index: 2;
 }
 
-.navigation-top {
+.navigation-top ul {
     text-align: center;
     padding: 10px 0;
 }
 
-.navigation-left {
-    display: none; /* Hidden by default, shown in mobile view */
-    position: fixed;
-    width: 200px;
-    height: 100vh;
-    left: 0;
-    top: 0;
-    overflow-y: auto;
-}
-
-.navigation-top ul,
-.navigation-left ul {
-    list-style: none;
-}
-
-.navigation-top ul li,
-.navigation-left ul li {
+.navigation-top ul li {
     display: inline-block;
-    margin-right: 10px;
+    margin: 0 10px;
 }
 
-.navigation-top ul li a,
-.navigation-left ul li a {
+.navigation-top ul li a {
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
 }
 
-/* Responsive video background */
+.navigation-left {
+    display: none; /* Initially hidden */
+}
+
+/* Responsive Video Background */
 #bg-video {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
     z-index: -1;
     filter: blur(5px);
 }
 
-/* Media Queries */
+/* Media Queries for responsive adjustments */
 @media (max-width: 768px) {
-    .navigation-top ul li,
-    .navigation-left ul li {
-        display: block;
-        margin-right: 0;
+    h1 {
+        font-size: 1.5rem; /* Smaller font size for smaller screens */
+    }
+
+    .navigation-top ul li {
+        display: block; /* Stack the navigation items */
+        text-align: center;
+        margin: 5px 0; /* Reduce margin for smaller screen */
     }
 
     .navigation-left {
+        display: block; /* Show the side navigation on smaller screens */
+        position: fixed;
+        width: 100%; /* Full width */
+        height: auto; /* Auto height based on content */
+        top: 60px; /* Below the top nav */
+        left: 0;
+        background-color: #333;
+        padding: 10px 0;
+        z-index: 3;
+    }
+
+    .navigation-left ul li a {
         display: block;
+        padding: 10px;
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
     }
 
-    h1 {
-        font-size: 1.5rem;
+    .navigation-top ul li a, .navigation-left ul li a {
+        padding: 8px 10px;
     }
 }
-
-/* Footer styles */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
